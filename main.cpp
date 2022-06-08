@@ -11,7 +11,7 @@ int main()
     Pokemon pkm2("ChuBeDan", 60,35, 170, "Water");
     
     ofstream fileOut;
-    fileOut.open("WINNER.OUT", ios_base::in);
+    fileOut.open("WINNER.OUT", ios::out);
     fileOut << pkm1.Fight(pkm2);
     return 0;
 }
